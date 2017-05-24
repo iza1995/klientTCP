@@ -30,10 +30,10 @@
         {
             this.przycisk1 = new System.Windows.Forms.Button();
             this.adres = new System.Windows.Forms.TextBox();
-            this.port = new System.Windows.Forms.NumericUpDown();
+            this.port_p = new System.Windows.Forms.NumericUpDown();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.polaczenie = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.port)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.port_p)).BeginInit();
             this.SuspendLayout();
             // 
             // przycisk1
@@ -54,17 +54,17 @@
             this.adres.TabIndex = 1;
             this.adres.Text = "Adres";
             // 
-            // port
+            // port_p
             // 
-            this.port.Location = new System.Drawing.Point(506, 41);
-            this.port.Maximum = new decimal(new int[] {
+            this.port_p.Location = new System.Drawing.Point(506, 41);
+            this.port_p.Maximum = new decimal(new int[] {
             55535,
             0,
             0,
             0});
-            this.port.Name = "port";
-            this.port.Size = new System.Drawing.Size(120, 20);
-            this.port.TabIndex = 2;
+            this.port_p.Name = "port_p";
+            this.port_p.Size = new System.Drawing.Size(120, 20);
+            this.port_p.TabIndex = 2;
             // 
             // listBox1
             // 
@@ -76,12 +76,13 @@
             // 
             // polaczenie
             // 
-            this.polaczenie.Location = new System.Drawing.Point(224, 443);
+            this.polaczenie.Location = new System.Drawing.Point(183, 443);
             this.polaczenie.Name = "polaczenie";
-            this.polaczenie.Size = new System.Drawing.Size(75, 23);
+            this.polaczenie.Size = new System.Drawing.Size(116, 32);
             this.polaczenie.TabIndex = 4;
             this.polaczenie.Text = "polącz";
             this.polaczenie.UseVisualStyleBackColor = true;
+            this.polaczenie.Click += new System.EventHandler(this.polaczenie_Click);
             // 
             // Form1
             // 
@@ -90,12 +91,12 @@
             this.ClientSize = new System.Drawing.Size(747, 487);
             this.Controls.Add(this.polaczenie);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.port);
+            this.Controls.Add(this.port_p);
             this.Controls.Add(this.adres);
             this.Controls.Add(this.przycisk1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.port)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.port_p)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,7 +106,7 @@
 
         private System.Windows.Forms.Button przycisk1;
         private System.Windows.Forms.TextBox adres;
-        private System.Windows.Forms.NumericUpDown port;
+        private System.Windows.Forms.NumericUpDown port_p;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button polaczenie;
     }
